@@ -1,0 +1,146 @@
+[0m11:52:58.326417 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efedede34d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efedda2fd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efedda2f9d0>]}
+
+
+============================== 11:52:58.334694 | bade84ce-a515-420b-9e7c-bda12808673c ==============================
+[0m11:52:58.334694 [info ] [MainThread]: Running with dbt=1.10.3
+[0m11:52:58.336044 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/shubz/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt init netflix', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:52:58.356897 [debug] [MainThread]: Starter project path: /home/shubz/netflix_dbt/venv/lib/python3.13/site-packages/dbt/include/starter_project
+[0m11:52:58.363453 [info ] [MainThread]: 
+Your new dbt project "netflix" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m11:52:58.364413 [info ] [MainThread]: Setting up your profile.
+[0m11:53:07.599970 [error] [MainThread]: Encountered an error:
+
+[0m11:53:07.605517 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/shubz/netflix_dbt/venv/lib/python3.13/site-packages/dbt/cli/requires.py", line 161, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "/home/shubz/netflix_dbt/venv/lib/python3.13/site-packages/dbt/cli/requires.py", line 111, in wrapper
+    return func(*args, **kwargs)
+  File "/home/shubz/netflix_dbt/venv/lib/python3.13/site-packages/dbt/cli/main.py", line 483, in init
+    results = task.run()
+  File "/home/shubz/netflix_dbt/venv/lib/python3.13/site-packages/dbt/task/init.py", line 346, in run
+    self.setup_profile(profile_name)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/home/shubz/netflix_dbt/venv/lib/python3.13/site-packages/dbt/task/init.py", line 248, in setup_profile
+    if not self.check_if_can_write_profile(profile_name=profile_name):
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/shubz/netflix_dbt/venv/lib/python3.13/site-packages/dbt/task/init.py", line 211, in check_if_can_write_profile
+    response = click.confirm(
+        f"The profile {profile_name} already exists in "
+        f"{profiles_file}. Continue and overwrite it?"
+    )
+  File "/home/shubz/netflix_dbt/venv/lib/python3.13/site-packages/click/termui.py", line 239, in confirm
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m11:53:07.609610 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 9.407767, "process_in_blocks": "1088", "process_kernel_time": 0.249235, "process_mem_max_rss": "100408", "process_out_blocks": "192", "process_user_time": 3.044217}
+[0m11:53:07.610861 [debug] [MainThread]: Command `dbt init` failed at 11:53:07.610605 after 9.41 seconds
+[0m11:53:07.611746 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efedda336f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efeddae8b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efeddd278a0>]}
+[0m11:53:07.612687 [debug] [MainThread]: Flushing usage events
+[0m14:21:01.743215 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb52759aa50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb528fa4690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb52653bd90>]}
+
+
+============================== 14:21:01.749505 | 96c955a9-43f4-4b0d-b157-566f68158ea2 ==============================
+[0m14:21:01.749505 [info ] [MainThread]: Running with dbt=1.10.2
+[0m14:21:01.750091 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/shubz/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'invocation_command': 'dbt init netflix', 'send_anonymous_usage_stats': 'True'}
+[0m14:21:01.764833 [info ] [MainThread]: A project called netflix already exists here.
+[0m14:21:01.765937 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.061818834, "process_in_blocks": "37344", "process_kernel_time": 0.109578, "process_mem_max_rss": "100032", "process_out_blocks": "8", "process_user_time": 0.946154}
+[0m14:21:01.766535 [debug] [MainThread]: Command `dbt init` succeeded at 14:21:01.766424 after 0.06 seconds
+[0m14:21:01.767082 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb526585ba0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb5265e9fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb5267ab9b0>]}
+[0m14:21:01.767418 [debug] [MainThread]: Flushing usage events
+[0m14:21:04.880230 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:23:09.771824 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efc17c96a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efc19680690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efc16c3bd90>]}
+
+
+============================== 14:23:09.774249 | f1e1b384-9715-4c1f-aa9b-ff4517fd1fb2 ==============================
+[0m14:23:09.774249 [info ] [MainThread]: Running with dbt=1.10.2
+[0m14:23:09.774657 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/home/shubz/.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m14:23:09.782629 [info ] [MainThread]: dbt version: 1.10.2
+[0m14:23:09.782970 [info ] [MainThread]: python version: 3.13.3
+[0m14:23:09.783206 [info ] [MainThread]: python path: /usr/bin/python3
+[0m14:23:09.783416 [info ] [MainThread]: os info: Linux-6.15.3-200.fc42.x86_64-x86_64-with-glibc2.41
+[0m14:23:10.478538 [info ] [MainThread]: Using profiles dir at /home/shubz/.dbt
+[0m14:23:10.478915 [info ] [MainThread]: Using profiles.yml file at /home/shubz/.dbt/profiles.yml
+[0m14:23:10.479242 [info ] [MainThread]: Using dbt_project.yml file at /home/shubz/netflix_dbt/dbt_project.yml
+[0m14:23:10.480017 [info ] [MainThread]: adapter type: snowflake
+[0m14:23:10.480298 [info ] [MainThread]: adapter version: 1.9.4
+[0m14:23:10.480552 [info ] [MainThread]: Configuration:
+[0m14:23:10.480775 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:23:10.480964 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m14:23:10.481168 [info ] [MainThread]: Required dependencies:
+[0m14:23:10.481397 [debug] [MainThread]: Executing "git --help"
+[0m14:23:10.482800 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:23:10.483107 [debug] [MainThread]: STDERR: "b''"
+[0m14:23:10.483591 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:23:10.483803 [info ] [MainThread]: Connection:
+[0m14:23:10.484009 [info ] [MainThread]:   account: QNIRDVM-HI10912
+[0m14:23:10.484206 [info ] [MainThread]:   user: SHUBZ
+[0m14:23:10.484402 [info ] [MainThread]:   database: MOVIELENS
+[0m14:23:10.484602 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m14:23:10.484796 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m14:23:10.484976 [info ] [MainThread]:   schema: DEV
+[0m14:23:10.485191 [info ] [MainThread]:   authenticator: None
+[0m14:23:10.485378 [info ] [MainThread]:   oauth_client_id: None
+[0m14:23:10.485555 [info ] [MainThread]:   query_tag: None
+[0m14:23:10.485977 [info ] [MainThread]:   client_session_keep_alive: False
+[0m14:23:10.486162 [info ] [MainThread]:   host: None
+[0m14:23:10.486341 [info ] [MainThread]:   port: None
+[0m14:23:10.486520 [info ] [MainThread]:   proxy_host: None
+[0m14:23:10.486712 [info ] [MainThread]:   proxy_port: None
+[0m14:23:10.486884 [info ] [MainThread]:   protocol: None
+[0m14:23:10.487055 [info ] [MainThread]:   connect_retries: 1
+[0m14:23:10.487226 [info ] [MainThread]:   connect_timeout: None
+[0m14:23:10.487394 [info ] [MainThread]:   retry_on_database_errors: False
+[0m14:23:10.487573 [info ] [MainThread]:   retry_all: False
+[0m14:23:10.487749 [info ] [MainThread]:   insecure_mode: False
+[0m14:23:10.487920 [info ] [MainThread]:   reuse_connections: True
+[0m14:23:10.488213 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m14:23:10.540258 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m14:23:10.574327 [debug] [MainThread]: Using snowflake connection "debug"
+[0m14:23:10.574722 [debug] [MainThread]: On debug: select 1 as id
+[0m14:23:10.574970 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:23:11.825519 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.250 seconds
+[0m14:23:11.826298 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m14:23:11.826586 [info ] [MainThread]: [31m1 check failed:[0m
+[0m14:23:11.826824 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/shubz/netflix_dbt/dbt_project.yml> not found
+
+[0m14:23:11.827477 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 2.095227, "process_in_blocks": "78544", "process_kernel_time": 0.15617, "process_mem_max_rss": "177112", "process_out_blocks": "2736", "process_user_time": 2.2678}
+[0m14:23:11.827869 [debug] [MainThread]: Command `dbt debug` failed at 14:23:11.827796 after 2.10 seconds
+[0m14:23:11.828118 [debug] [MainThread]: Connection 'debug' was left open.
+[0m14:23:11.828336 [debug] [MainThread]: On debug: Close
+[0m14:23:12.041020 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efbfd502650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efbfd02f2f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efbfd49a8b0>]}
+[0m14:23:12.041443 [debug] [MainThread]: Flushing usage events
+[0m14:23:13.360574 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:55:53.497972 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7832baea50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f78344d8690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7831b4fd90>]}
+
+
+============================== 15:55:53.501843 | bea6266a-3cc4-4a21-ae85-4bfec1663b42 ==============================
+[0m15:55:53.501843 [info ] [MainThread]: Running with dbt=1.10.2
+[0m15:55:53.502448 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/shubz/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:55:53.502807 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/shubz/netflix_dbt/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m15:55:53.503882 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.0436636, "process_in_blocks": "8", "process_kernel_time": 0.076521, "process_mem_max_rss": "99992", "process_out_blocks": "8", "process_user_time": 0.898579}
+[0m15:55:53.504351 [debug] [MainThread]: Command `dbt run` failed at 15:55:53.504255 after 0.04 seconds
+[0m15:55:53.504645 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7831b988a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7831c7dfd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7831dbf9b0>]}
+[0m15:55:53.505112 [debug] [MainThread]: Flushing usage events
+[0m15:55:54.797723 [debug] [MainThread]: An error was encountered while trying to flush usage events
