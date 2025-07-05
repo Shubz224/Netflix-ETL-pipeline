@@ -1,5 +1,7 @@
 # Netflix Data Analytics Pipeline
 
+![Flow](/public/home.png) 
+
 ## 🎯 Project Overview
 
 This repository contains a comprehensive data transformation pipeline built with **dbt (Data Build Tool)** and **Snowflake** for analyzing Netflix/MovieLens dataset. The pipeline transforms raw movie ratings, genome tags, and movie metadata into a structured data warehouse following dimensional modeling principles.
@@ -42,6 +44,8 @@ Staging models perform initial data cleaning and standardization:
 - **`src_genome_score`**: Processes genome relevance scores
 - **`src_links`**: Standardizes external link references
 - **`src_tags`**: Processes user-generated tags with timestamp conversion
+
+![Lingage Graph](/public/lingageGraph.png) 
 
 ### Dimensional Layer (`dim/`)
 Dimension tables for analytical queries:
